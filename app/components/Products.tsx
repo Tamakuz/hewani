@@ -17,12 +17,10 @@ const ProductsSection = () => {
           {products.map((product) => (
             <div key={product.id} className="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col">
               <div className="relative h-48 sm:h-56 md:h-64 lg:h-72">
-                <Image
+                <img
                   src={product.image}
                   alt={product.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="transition-transform duration-300 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
                 <div className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-emerald-500 text-white text-xs sm:text-sm font-semibold px-2 sm:px-3 py-1 rounded-full">
                   {product.type}

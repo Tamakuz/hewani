@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 
 const AboutSection = () => {
@@ -11,12 +10,10 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="relative h-64 sm:h-80 md:h-96 lg:h-[400px] xl:h-[500px] order-1 lg:order-none">
-            <Image
-              src="https://img.freepik.com/free-photo/beautiful-asian-woman-farmer-with-cows-cowshed-dairy-farm_1150-12771.jpg?t=st=1729870411~exp=1729874011~hmac=06c16cd5b62041a63f29253951d7e5c17927ba281822cf97eb1362ee09cc8a25&w=1060"
+            <img
+              src="/kami.jpg"
               alt="Peternakan kambing kami"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-2xl shadow-xl"
+              className="rounded-2xl shadow-xl w-full h-full object-cover"
             />
           </div>
           <div className="order-2 lg:order-none">
