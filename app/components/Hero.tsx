@@ -4,9 +4,12 @@ import { Button } from '@/components/ui/button'
 
 const HeroSection = () => {
   return (
-    <div id='hero' className="relative h-[calc(100vh-64px)] sm:h-[calc(100vh-80px)] mt-16 sm:mt-20 flex items-center justify-center overflow-hidden">
+    <div
+      id="hero"
+      className="relative h-[calc(100vh-64px)] sm:h-[calc(100vh-80px)] mt-16 sm:mt-20 flex items-center justify-center overflow-hidden"
+    >
       <Image
-        src="https://images.unsplash.com/photo-1619421568694-5f4f0bf24903?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="https://img.freepik.com/free-photo/rural-life-concept-with-goat-sheep_23-2149147937.jpg?t=st=1729870000~exp=1729873600~hmac=4fe2cd2c7f16ba725f3b895d5f85b67a5948a7b8c6c2990910a717fdfa6420bb&w=1060"
         alt="Kambing berkualitas"
         layout="fill"
         objectFit="cover"
