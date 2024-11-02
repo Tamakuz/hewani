@@ -32,7 +32,7 @@ const Navbar = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
     setIsMenuOpen(false);
   };
@@ -52,7 +52,7 @@ const Navbar = () => {
                 <NavigationMenuItem>
                   <NavigationMenuLink
                     className="text-emerald-100 hover:text-white transition duration-300 font-medium text-sm lg:text-base cursor-pointer"
-                    onClick={() => scrollToSection('hero')}
+                    onClick={() => scrollToSection("hero")}
                   >
                     Beranda
                   </NavigationMenuLink>
@@ -60,7 +60,7 @@ const Navbar = () => {
                 <NavigationMenuItem>
                   <NavigationMenuLink
                     className="text-emerald-100 hover:text-white transition duration-300 font-medium text-sm lg:text-base cursor-pointer"
-                    onClick={() => scrollToSection('products')}
+                    onClick={() => scrollToSection("products")}
                   >
                     Produk
                   </NavigationMenuLink>
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <NavigationMenuItem>
                   <NavigationMenuLink
                     className="text-emerald-100 hover:text-white transition duration-300 font-medium text-sm lg:text-base cursor-pointer"
-                    onClick={() => scrollToSection('about')}
+                    onClick={() => scrollToSection("about")}
                   >
                     Tentang Kami
                   </NavigationMenuLink>
@@ -76,7 +76,7 @@ const Navbar = () => {
                 <NavigationMenuItem>
                   <NavigationMenuLink
                     className="text-emerald-100 hover:text-white transition duration-300 font-medium text-sm lg:text-base cursor-pointer"
-                    onClick={() => scrollToSection('contact')}
+                    onClick={() => scrollToSection("contact")}
                   >
                     Kontak
                   </NavigationMenuLink>
@@ -88,7 +88,7 @@ const Navbar = () => {
             <Button
               variant="outline"
               className="bg-yellow-500 text-emerald-900 hover:bg-yellow-600 hover:text-white transition duration-300 shadow-md px-4 py-2 lg:px-6 lg:py-2 rounded-full font-bold text-sm lg:text-base border-2 border-yellow-400"
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection("contact")}
             >
               Hubungi Kami
             </Button>
@@ -102,22 +102,34 @@ const Navbar = () => {
         {isMobile && isMenuOpen && (
           <div className="md:hidden py-4">
             <div className="flex flex-col space-y-4">
-              <button onClick={() => scrollToSection('hero')} className="text-emerald-100 hover:text-white transition duration-300 font-medium text-base text-left">
+              <button
+                onClick={() => scrollToSection("hero")}
+                className="text-emerald-100 hover:text-white transition duration-300 font-medium text-base text-left"
+              >
                 Beranda
               </button>
-              <button onClick={() => scrollToSection('products')} className="text-emerald-100 hover:text-white transition duration-300 font-medium text-base text-left">
+              <button
+                onClick={() => scrollToSection("products")}
+                className="text-emerald-100 hover:text-white transition duration-300 font-medium text-base text-left"
+              >
                 Produk
               </button>
-              <button onClick={() => scrollToSection('about')} className="text-emerald-100 hover:text-white transition duration-300 font-medium text-base text-left">
+              <button
+                onClick={() => scrollToSection("about")}
+                className="text-emerald-100 hover:text-white transition duration-300 font-medium text-base text-left"
+              >
                 Tentang Kami
               </button>
-              <button onClick={() => scrollToSection('contact')} className="text-emerald-100 hover:text-white transition duration-300 font-medium text-base text-left">
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="text-emerald-100 hover:text-white transition duration-300 font-medium text-base text-left"
+              >
                 Kontak
               </button>
               <Button
                 variant="outline"
                 className="bg-yellow-500 text-emerald-900 hover:bg-yellow-600 hover:text-white transition duration-300 shadow-md px-4 py-2 rounded-full font-bold text-sm border-2 border-yellow-400 w-full"
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection("contact")}
               >
                 Hubungi Kami
               </Button>
