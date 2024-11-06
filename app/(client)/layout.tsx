@@ -18,6 +18,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Penjualan Kambing Berkualitas",
   description: "Temukan kambing berkualitas tinggi untuk kebutuhan Anda",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
