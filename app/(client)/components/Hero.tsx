@@ -1,6 +1,6 @@
-import React from 'react'
-import Image from 'next/image'
-import { Button } from '@/components/ui/button'
+import React from "react";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
@@ -30,6 +30,6 @@ const HeroSection = () => {
       </div>
     </div>
   );
-}
+};
 
-export default HeroSection
+export default HeroSection;
