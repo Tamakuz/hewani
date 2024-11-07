@@ -228,7 +228,7 @@ const ModernDashboard = () => {
               <div className="space-y-4">
                 <div className="flex justify-between items-center flex-wrap gap-4">
                   <div className="flex items-center gap-4">
-                    <AddProductForm />
+                   <button>tambah product</button>
                     <div className="relative">
                       <Search className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
                       <Input
