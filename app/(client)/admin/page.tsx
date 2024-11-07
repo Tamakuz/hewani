@@ -44,7 +44,6 @@ import {
   Users,
 } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
-import AddProductForm from "./AddProductForm";
 import AddCategory from "./AddCategory";
 
 // Dummy data
