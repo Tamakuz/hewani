@@ -31,7 +31,7 @@ export default function AdminDashboard() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen mt-20">
       <main className="flex-grow container mx-auto p-4">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold">Dashboard Admin Hidayah Farm</h1>
