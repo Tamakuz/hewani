@@ -9,8 +9,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import UserManagement from "./user-management";
-import KambingManagement from "./KambingManagement";
+// import UserManagement from "./user-management";
+// import KambingManagement from "./KambingManagement";
 
 export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState("kambing");
@@ -22,11 +22,11 @@ export default function AdminDashboard() {
 
   const renderContent = () => {
     switch (activeTab) {
-      case "user":
-        return <UserManagement />;
-      case "kambing":
-      default:
-        return <KambingManagement />;
+      // case "user":
+      //   return <UserManagement />;
+      // case "kambing":
+      // default:
+      //   return <KambingManagement />;
     }
   };
 
@@ -64,7 +64,7 @@ export default function AdminDashboard() {
             </DropdownMenu>
           </div>
         </div>
-        {renderContent()}
+        {/* {renderContent()} */}
       </main>
     </div>
   );

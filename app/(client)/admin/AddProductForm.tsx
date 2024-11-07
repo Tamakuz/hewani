@@ -83,7 +83,11 @@ const AddProductForm = () => {
       const formDataToSend = new FormData();
       Object.entries(formData).forEach(([key, value]) => {
         if (value !== null && value !== undefined) {
-          formDataToSend.append(key, value);
+          if (typeof value === 'boolean') {
+            formDataToSend.append(key, value.toString());
+          } else {
+            formDataToSend.append(key, value);
+          }
         }
       });
 

@@ -300,7 +300,7 @@ const ModernDashboard = () => {
                           <TableCell>
                             <Badge
                               variant={
-                                product.stock > 0 ? "success" : "destructive"
+                                product.stock > 0 ? "default" : "destructive"
                               }
                             >
                               {product.stock} unit
@@ -311,7 +311,7 @@ const ModernDashboard = () => {
                               <Badge
                                 variant={
                                   product.isAvailable
-                                    ? "success"
+                                    ? "default"
                                     : "destructive"
                                 }
                               >
@@ -323,7 +323,7 @@ const ModernDashboard = () => {
                               <Badge
                                 variant={
                                   product.vaccination_status
-                                    ? "success"
+                                    ? "default"
                                     : "destructive"
                                 }
                               >
@@ -422,7 +422,7 @@ const ModernDashboard = () => {
                         <div className="flex justify-between items-center">
                           <Badge
                             variant={
-                              category.isActive ? "success" : "destructive"
+                              category.isActive ? "default" : "destructive"
                             }
                           >
                             {category.isActive ? "Active" : "Inactive"}
