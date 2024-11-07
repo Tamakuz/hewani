@@ -1,0 +1,50 @@
+[33mcommit 7d64119d76b67c4d1283439720cfc43cc6640b41[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: mbahhadi <hadzipamuji5@gmail.com>
+Date:   Wed Nov 6 09:20:00 2024 +0700
+
+    dasboard-category
+
+[33mcommit 401e4824058851664f2d185ded0f71da7f59cbd8[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: e3ad47f d967700
+Author: Jovan Panji Pratama <117788207+Tamakuz@users.noreply.github.com>
+Date:   Sat Nov 2 11:42:37 2024 +0700
+
+    Merge pull request #2 from HadZzz/main
+    
+    admin
+
+[33mcommit d9677001f039dc340a5a2564407b6353a7accca5[m
+Author: mbahhadi <hadzipamuji5@gmail.com>
+Date:   Sat Nov 2 11:08:39 2024 +0700
+
+    admin
+
+[33mcommit e3ad47f6bb18da2f857d9b0df5951c4cd36c41d7[m
+Author: Tamakuz <jovangithub@gmail.com>
+Date:   Fri Nov 1 23:05:24 2024 +0700
+
+    ADD: Setup Server
+
+[33mcommit ed1fe797bb4f5f3f082f2502015b20961790d965[m
+Author: Tamakuz <jovangithub@gmail.com>
+Date:   Fri Oct 25 22:43:37 2024 +0700
+
+    first commit
+
+[33mcommit 3c3fcca3d5a4ad4c9cf1fa2ede43a10b64bd84ab[m
+Author: Tamakuz <jovangithub@gmail.com>
+Date:   Fri Oct 25 22:33:58 2024 +0700
+
+    first commit
+
+[33mcommit a2c98fc468980725a493fee79d3451cd9539cc7d[m
+Author: Tamakuz <jovangithub@gmail.com>
+Date:   Fri Oct 25 22:14:14 2024 +0700
+
+    first commit
+
+[33mcommit 6f13c79deeb770c0dcaa03f154d21c85248b4837[m
+Author: Tamakuz <jovangithub@gmail.com>
+Date:   Fri Oct 25 21:22:54 2024 +0700
+
+    Initial commit from Create Next App
