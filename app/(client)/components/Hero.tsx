@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div
       id="hero"
-      className="relative h-[calc(100vh-64px)] sm:h-[calc(100vh-80px)] mt-16 sm:mt-20 flex items-center justify-center overflow-hidden"
+      className="relative h-[calc(100vh-64px)] sm:h-[calc(100vh-80px)] mt-16 flex items-center justify-center overflow-hidden"
     >
       <img
         src="https://png.pngtree.com/background/20230426/original/pngtree-cute-white-goat-standing-on-a-rock-picture-image_2485513.jpg"
