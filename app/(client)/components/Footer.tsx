@@ -112,7 +112,7 @@ export default function Footer() {
               {[
                 {
                   icon: MapPin,
-                  text: "Jl. Peternakan No. 123, Bandung, Jawa Barat, Indonesia",
+                  text: "kudusan gumpang, surakarta, Jawa tengah, Indonesia",
                 },
                 {
                   icon: Phone,
