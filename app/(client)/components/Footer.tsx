@@ -112,15 +112,15 @@ export default function Footer() {
               {[
                 {
                   icon: MapPin,
-                  text: "Jl. Peternakan No. 123, Bandung, Jawa Barat, Indonesia",
+                  text: "kudusan gumpang, surakarta, Jawa tengah, Indonesia",
                 },
                 {
                   icon: Phone,
-                  text: "+62 123 456 789",
+                  text: "+62 812-1557-8585",
                 },
                 {
                   icon: Mail,
-                  text: "info@premiumfarm.com",
+                  text: "dody5@gmail.com",
                 },
               ].map((item, index) => (
                 <li key={index} className="flex items-start space-x-3">

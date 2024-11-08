@@ -60,7 +60,7 @@ export default function AboutSection() {
             Penyedia Hewan Ternak Premium Terpercaya
           </p>
           <p className="mt-4 text-lg text-gray-600">
-            Dengan pengalaman lebih dari 10 tahun, kami berkomitmen menyediakan
+            Dengan pengalaman lebih dari 5 tahun, kami berkomitmen menyediakan
             hewan ternak berkualitas tinggi dengan standar kesehatan terbaik.
           </p>
         </div>
