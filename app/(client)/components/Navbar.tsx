@@ -32,7 +32,7 @@ export default function Navbar() {
           {/* <img src="/logo.avif" alt="logo" width={100} height={50} /> */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-bold text-emerald-600">
-              PremiumFarm
+              Hidayah Farm
             </Link>
           </div>
 
