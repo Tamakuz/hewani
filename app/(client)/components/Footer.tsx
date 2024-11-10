@@ -120,7 +120,7 @@ export default function Footer() {
                 },
                 {
                   icon: Mail,
-                  text: "dody5@gmail.com",
+                  text: "dodyptmaji@gmail.com",
                 },
               ].map((item, index) => (
                 <li key={index} className="flex items-start space-x-3">
