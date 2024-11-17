@@ -69,7 +69,5 @@ export interface EditProductDialogProps {
 
 export interface EditCategoryDialogProps {
   category: Category;
-  open: boolean;
-  onOpenChange: (open: boolean) => void;
   onSave: () => void;
 }

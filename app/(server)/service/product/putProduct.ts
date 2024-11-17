@@ -55,9 +55,19 @@ export const putProduct = async (c: Context) => {
       // Delete old image if exists
       if (existingProduct[0].imageKey) {
         try {
-          await imagekit.deleteFile(existingProduct[0].imageKey);
+          await new Promise((resolve, reject) => {
+            imagekit.deleteFile(existingProduct[0].imageKey as string, (error, result) => {
+              if (error) reject(error);
+              else resolve(result);
+            });
+          });
         } catch (error) {
           console.error("Error deleting old image:", error);
+          return c.json({
+            success: false,
+            message: "Failed to delete old image", 
+            error: error instanceof Error ? error.message : "Unknown error"
+          }, 500);
         }
       }
 
@@ -96,4 +106,3 @@ export const putProduct = async (c: Context) => {
     }, 500);
   }
 };
-

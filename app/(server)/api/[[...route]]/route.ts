@@ -7,7 +7,7 @@ import { putCategorie } from "../../service/categories/putCategorie";
 import { deleteCategories } from "../../service/categories/deleteCategories";
 import { postProduct } from "../../service/product/postProduct";
 import { deleteProduct } from "../../service/product/deleteProduct";
-// import { putProduct } from "../../service/product/putProduct";
+import { putProduct } from "../../service/product/putProduct";
 
 export const runtime = "nodejs";
 
@@ -22,7 +22,7 @@ app.get("/hello", (c) => {
 app.get("/products", getAllProduct);
 app.post("/products", postProduct);
 app.delete("/products/:id", deleteProduct);
-// app.put("/products/:id", putProduct);
+app.put("/products/:id", putProduct);
 
 app.get("/categories", getCategories);
 app.post("/categories", postCategorie);

@@ -1,8 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ArrowRight, ShoppingCart, Star, Eye, Phone } from "lucide-react";
 import Link from "next/link";
-import products from "../data";
+
 export interface Product {
   id: number;
   name: string;
@@ -13,8 +13,35 @@ export interface Product {
   weight: string;
   age: string;
 }
+
 export default function ProductSection() {
   const [showAll, setShowAll] = useState(false);
+  const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch('/api/products');
+        const data = await response.json();
+        
+        if (data.success) {
+          setProducts(data.data);
+        } else {
+          setError(data.message || 'Failed to fetch products');
+        }
+      } catch (error) {
+        console.error('Error fetching products:', error);
+        setError('Error fetching products');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
   const displayedProducts = showAll ? products : products.slice(0, 6);
 
   const handleWhatsAppClick = (productName: string) => {
@@ -24,6 +51,26 @@ export default function ProductSection() {
     );
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
+
+  if (loading) {
+    return (
+      <section className="py-20 bg-gradient-to-b from-white to-emerald-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">Loading products...</div>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section className="py-20 bg-gradient-to-b from-white to-emerald-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-red-600">{error}</div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section

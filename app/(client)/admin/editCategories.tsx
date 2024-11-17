@@ -9,19 +9,20 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
+  DialogTrigger,
 } from "@/components/ui/dialog";
 import { Switch } from "@/components/ui/switch";
 import { EditCategoryDialogProps, Category } from "@/hooks/index";
 import { toast } from "sonner";
+import { Pencil } from "lucide-react";
 
 export default function EditCategoryDialog({
   category,
-  open,
-  onOpenChange,
   onSave,
 }: EditCategoryDialogProps) {
   const [editForm, setEditForm] = useState<Category>(category);
   const [isLoading, setIsLoading] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,7 +43,7 @@ export default function EditCategoryDialog({
 
       toast.success("Category updated successfully");
       onSave();
-      onOpenChange(false);
+      setIsOpen(false);
     } catch (error) {
       console.error("Error updating category:", error);
       toast.error("Failed to update category");
@@ -52,7 +53,12 @@ export default function EditCategoryDialog({
   };
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
+    <Dialog open={isOpen} onOpenChange={setIsOpen}>
+      <DialogTrigger asChild>
+        <Button variant="ghost" size="icon">
+          <Pencil className="h-4 w-4" />
+        </Button>
+      </DialogTrigger>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>Edit Category</DialogTitle>
@@ -68,6 +74,7 @@ export default function EditCategoryDialog({
                   setEditForm((prev) => ({ ...prev, name: e.target.value }))
                 }
                 required
+                disabled={isLoading}
               />
             </div>
 
@@ -82,6 +89,7 @@ export default function EditCategoryDialog({
                     description: e.target.value,
                   }))
                 }
+                disabled={isLoading}
               />
             </div>
 
@@ -93,6 +101,7 @@ export default function EditCategoryDialog({
                 onCheckedChange={(checked) =>
                   setEditForm((prev) => ({ ...prev, isActive: checked }))
                 }
+                disabled={isLoading}
               />
             </div>
           </div>
@@ -100,7 +109,7 @@ export default function EditCategoryDialog({
             <Button
               type="button"
               variant="outline"
-              onClick={() => onOpenChange(false)}
+              onClick={() => setIsOpen(false)}
               disabled={isLoading}
             >
               Cancel
